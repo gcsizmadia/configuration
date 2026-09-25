@@ -1,9 +1,11 @@
-﻿// Copyright © 2022-2024 Gabor Csizmadia
+﻿// Copyright © 2022-2026 Gabor Csizmadia
 // This code is licensed under MIT license (see LICENSE for details)
 
 using EgonsoftHU.Extensions.Configuration;
 
+#pragma warning disable IDE0130 // Namespace does not match folder structure
 namespace Microsoft.Extensions.Configuration
+#pragma warning restore IDE0130 // Namespace does not match folder structure
 {
     /// <summary>
     /// Contains an extension method for <see cref="IConfigurationBuilder"/>.
