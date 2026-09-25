@@ -5,7 +5,7 @@ This code is licensed under MIT license (see LICENSE for details)
 <Project>
 
   <PropertyGroup>
-    <EgonsoftHUCommonTargetsFile>$(MSBuildThisFileDirectory)..\..\build\EgonsoftHU.Common.targets</EgonsoftHUCommonTargetsFile>
+    <EgonsoftHUCommonTargetsFile>$(MSBuildThisFileDirectory)build\EgonsoftHU.Common.targets</EgonsoftHUCommonTargetsFile>
   </PropertyGroup>
 
   <Import Project="$(EgonsoftHUCommonTargetsFile)" Condition="Exists('$(EgonsoftHUCommonTargetsFile)')" />

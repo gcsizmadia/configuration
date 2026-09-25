@@ -13,7 +13,7 @@ This code is licensed under MIT license (see LICENSE for details)
   </PropertyGroup>
 
   <PropertyGroup>
-    <EgonsoftHUCommonPropsFile>$(MSBuildThisFileDirectory)..\..\build\EgonsoftHU.Common.props</EgonsoftHUCommonPropsFile>
+    <EgonsoftHUCommonPropsFile>$(MSBuildThisFileDirectory)build\EgonsoftHU.Common.props</EgonsoftHUCommonPropsFile>
   </PropertyGroup>
 
   <Import Project="$(EgonsoftHUCommonPropsFile)" Condition="Exists('$(EgonsoftHUCommonPropsFile)')" />
