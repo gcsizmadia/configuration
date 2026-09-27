@@ -13,6 +13,7 @@
   <Folder Name="/00_Documents/">
     <File Path="LICENSE" />
     <File Path="README.md" />
+    <File Path="RELEASES.md" />
   </Folder>
   <Project Path="src/EgonsoftHU.Extensions.Configuration.ConfigurationManager/EgonsoftHU.Extensions.Configuration.ConfigurationManager.csproj" />
 </Solution>

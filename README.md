@@ -25,7 +25,7 @@ You can find the release notes [here](https://github.com/gcsizmadia/configuratio
 
 |Version|Release Date|Latest Patch Version|End of Support|Targets|
 |-|-|-|-|-|
-|10.0|2026-09-26|10.0.0|2028-11-14|`net8.0`, `net9.0`, `net10.0`<br/>`net462`<br/>`netstandard2.0`, `netstandard2.1`|
+|10.0|2026-09-27|10.0.0|2028-11-14|`net8.0`, `net9.0`, `net10.0`<br/>`net462`<br/>`netstandard2.0`, `netstandard2.1`|
 
 ### Usage
 Suppose you have an `App.config` file with the following content.
