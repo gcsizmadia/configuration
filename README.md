@@ -7,7 +7,7 @@ Extensions for Microsoft.Extensions.Configuration.
 [![Nuget](https://img.shields.io/nuget/v/EgonsoftHU.Extensions.Configuration.ConfigurationManager?label=NuGet)](https://www.nuget.org/packages/EgonsoftHU.Extensions.Configuration.ConfigurationManager)
 [![Nuget](https://img.shields.io/nuget/dt/EgonsoftHU.Extensions.Configuration.ConfigurationManager?label=Downloads)](https://www.nuget.org/packages/EgonsoftHU.Extensions.Configuration.ConfigurationManager)
 
-App.config/Web.config configuration provider implementation for Microsoft.Extensions.Configuration.
+App.config and Web.config configuration provider implementation for Microsoft.Extensions.Configuration.
 
 ### Introduction
 When migrating from .NET Framework to .NET and your `App.config` or `Web.config` file contains 
@@ -25,6 +25,7 @@ You can find the release notes [here](https://github.com/gcsizmadia/configuratio
 
 |Version|Release Date|Latest Patch Version|End of Support|Targets|
 |-|-|-|-|-|
+|11.0|2026-11-12|11.0.0|2028-11-14|`net10.0`, `net11.0`<br/>`net462`<br/>`netstandard2.0`, `netstandard2.1`|
 |10.0|2026-09-27|10.0.0|2028-11-14|`net8.0`, `net9.0`, `net10.0`<br/>`net462`<br/>`netstandard2.0`, `netstandard2.1`|
 
 ### Usage
@@ -55,6 +56,8 @@ To access these settings through an `IConfiguration` instance:
 ```C#
 using System;
 
+using EgonsoftHU.Extensions.Configuration;
+
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -84,6 +87,7 @@ Console.WriteLine(configuration.GetConnectionString("MyConnectionString"));
 // Alternatively you can get the connection string also this way.
 Console.WriteLine(configuration["ConnectionStrings:MyConnectionString"]);
 ```
+
 ### Credits
 Ben Foster
 - Blogpost: [Using .NET Core Configuration with legacy projects](https://benfoster.io/blog/net-core-configuration-legacy-projects/)
