@@ -11,10 +11,12 @@ using ConfigurationManager = System.Configuration.ConfigurationManager;
 namespace EgonsoftHU.Extensions.Configuration
 {
     /// <summary>
-    /// App.config/Web.config configuration provider implementation for Microsoft.Extensions.Configuration.
+    /// App.config and Web.config configuration provider implementation for Microsoft.Extensions.Configuration.
     /// </summary>
-    /// <remarks>Uses <see cref="ConfigurationManager" /> to load AppSettings and ConnectionStrings.</remarks>
-    public class ConfigurationManagerConfigurationProvider : ConfigurationProvider, IConfigurationSource
+    /// <remarks>
+    /// Uses <see cref="ConfigurationManager" /> to load settings from <c>&lt;AppSettings&gt;</c> and <c>&lt;ConnectionStrings&gt;</c> nodes.
+    /// </remarks>
+    internal sealed class ConfigurationManagerConfigurationProvider : ConfigurationProvider, IConfigurationSource
     {
         /// <inheritdoc />
         public override void Load()
